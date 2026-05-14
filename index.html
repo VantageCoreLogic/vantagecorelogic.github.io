@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praxis Applied Logic | Systems Integration & Architecture</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preload" as="image" href="PAL-Background_1600x900.png" fetchpriority="high">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -16,7 +18,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #121212; 
+            background-color: #0a0a0a; /* Darker fallback color */
             font-family: 'Inter', sans-serif;
             color: #ffffff;
             line-height: 1.6;
@@ -28,7 +30,8 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: url('PAL-Background_1600x900.png') no-repeat center center;
+            /* Added fallback background-color to prevent white flash */
+            background: #0a0a0a url('PAL-Background_1600x900.png') no-repeat center center;
             background-size: cover;
             z-index: -2;
             will-change: transform; 
@@ -202,11 +205,11 @@
         <section class="grid">
             <div class="card">
                 <h3>Full-Stack Systems Architecture</h3>
-                <p>Architecting resilient software solutions and facility management backends using modern embedded languages and robust database schemas.</p>
+                <p>Architecting resilient software solutions and operational backends using modern embedded languages and robust database schemas.</p>
             </div>
             <div class="card">
                 <h3>Asset & Workflow Digitization</h3>
-                <p>Deployment of localized database structures to track operational task routing, inventory, and automated facility ticketing.</p>
+                <p>Deployment of localized database structures to track operational task routing, inventory, and automated system ticketing.</p>
             </div>
             <div class="card">
                 <h3>Custom API Development & Bridging</h3>
@@ -214,30 +217,30 @@
             </div>
             <div class="card">
                 <h3>Database Migration & Optimization</h3>
-                <p>Restructuring messy, siloed facility data into clean, relational SQL databases.</p>
+                <p>Restructuring messy, siloed infrastructure data into clean, relational SQL databases.</p>
             </div>
             <div class="card">
                 <h3>Automated Reporting Logic</h3>
-                <p>Developing scripts that automatically aggregate weekly operational data (utility usage, downtime, task completion) into stakeholder reports.</p>
+                <p>Developing scripts that automatically aggregate weekly operational data (resource usage, downtime, task completion) into stakeholder reports.</p>
             </div>
             <div class="card">
                 <h3>Local LLM/AI Deployment</h3>
-                <p>Setting up secure, localized AI models on internal Linux servers for querying internal wikis without sending proprietary data to the cloud.</p>
+                <p>Setting up secure, localized AI models on internal servers for querying internal wikis without sending proprietary data to the cloud.</p>
             </div>
         </section>
 
         <h2 class="service-category-title">Network Infrastructure & Security</h2>
         <section class="grid">
             <div class="card">
-                <h3>Advanced Home & Commercial Networking</h3>
+                <h3>Advanced Workspace & Commercial Networking</h3>
                 <p>Deploying highly stable wireless distribution, high-speed backbone architecture, and localized storage solutions.</p>
             </div>
             <div class="card">
                 <h3>Campus-Wide Wireless Bridging</h3>
-                <p>Extending robust network coverage to detached workshops, barns, and outbuildings using point-to-point wireless uplinks and buried low-voltage drops.</p>
+                <p>Extending robust network coverage to detached workshops and outbuildings using point-to-point wireless uplinks and buried low-voltage drops.</p>
             </div>
             <div class="card">
-                <h3>High-Availability Workspaces</h3>
+                <h3>High-Availability Infrastructure</h3>
                 <p>Architecting enterprise-grade infrastructure for remote professionals, including automated internet failover logic and dedicated hardware firewalls.</p>
             </div>
             <div class="card">
@@ -246,7 +249,7 @@
             </div>
             <div class="card">
                 <h3>VPN & Secure Tunneling Architecture</h3>
-                <p>Designing encrypted connections for facility managers to securely access local network resources from off-site.</p>
+                <p>Designing encrypted connections for authorized personnel to securely access local network resources from off-site.</p>
             </div>
             <div class="card">
                 <h3>VLAN Segmentation</h3>
@@ -265,7 +268,7 @@
                 <p>End-to-end design and bench assembly of bespoke sensor arrays, relay controllers, and specialized enclosures for demanding physical environments.</p>
             </div>
             <div class="card">
-                <h3>Smart Home Unification</h3>
+                <h3>Smart Systems Unification</h3>
                 <p>Consolidating disparate IoT devices into a single, secure interface prioritized for local-control autonomy without reliance on third-party servers.</p>
             </div>
             <div class="card">
@@ -278,27 +281,27 @@
             </div>
             <div class="card">
                 <h3>Edge Computing Deployment</h3>
-                <p>Configuring lightweight Linux devices (like Raspberry Pi clusters) to process sensor data locally at the machine level.</p>
+                <p>Configuring lightweight Linux devices to process sensor data locally at the machine level.</p>
             </div>
         </section>
 
         <h2 class="service-category-title">Sensor Integration & Operational Telemetry</h2>
         <section class="grid">
             <div class="card">
-                <h3>Warehouse & Inventory Climate Monitoring</h3>
-                <p>Deploying localized, passive sensor arrays to track temperature, humidity, and light exposure for sensitive inventory without interfacing with facility HVAC controls.</p>
+                <h3>Logistics & Inventory Climate Monitoring</h3>
+                <p>Deploying localized, passive sensor arrays to track temperature, humidity, and light exposure for sensitive inventory without interfacing with primary environmental controls.</p>
             </div>
             <div class="card">
                 <h3>Occupancy & Utilization Tracking</h3>
-                <p>Installing motion and proximity gateways to map foot traffic and room utilization, allowing clients to optimize their cleaning schedules and operational routing.</p>
+                <p>Installing motion and proximity gateways to map foot traffic and room utilization, allowing clients to optimize maintenance schedules and operational routing.</p>
             </div>
             <div class="card">
                 <h3>Asset Proximity & Tagging</h3>
-                <p>Architecting RFID or Bluetooth low-energy (BLE) networks to track the real-time location of high-value tools, warehouse carts, or logistics pallets across a campus.</p>
+                <p>Architecting RFID or Bluetooth low-energy (BLE) networks to track the real-time location of high-value tools or logistics pallets across a campus.</p>
             </div>
             <div class="card">
                 <h3>Automated Alert Logic</h3>
-                <p>Programming threshold-based notification systems (e.g., sending an SMS to a shift manager if a cold-storage door is left ajar or if a localized water leak is detected).</p>
+                <p>Programming threshold-based notification systems (e.g., sending an SMS to a manager if a cold-storage door is left ajar or if a localized water leak is detected).</p>
             </div>
         </section>
 
@@ -306,7 +309,7 @@
         <section class="grid">
             <div class="card">
                 <h3>Digital Task & Routing Architecture</h3>
-                <p>Replacing paper-based checklists with customized, localized database structures that track daily operational tasks, cleaning routes, and shift handoffs.</p>
+                <p>Replacing paper-based checklists with customized, localized database structures that track daily operational tasks and shift handoffs.</p>
             </div>
             <div class="card">
                 <h3>Automated Task Orchestration</h3>
@@ -314,26 +317,26 @@
             </div>
             <div class="card">
                 <h3>Inventory & Consumables Databases</h3>
-                <p>Building robust SQL schemas to track warehouse stock, cleaning supplies, and general operational logistics from receiving to deployment.</p>
+                <p>Building robust SQL schemas to track warehouse stock, supply chains, and general operational logistics from receiving to deployment.</p>
             </div>
             <div class="card">
                 <h3>Standard Operating Procedure (SOP) Digitization</h3>
-                <p>Converting complex facility manuals into interactive, step-by-step digital workflows that staff can access securely via mobile tablets.</p>
+                <p>Converting complex operational manuals into interactive, step-by-step digital workflows that staff can access securely via mobile devices.</p>
             </div>
             <div class="card">
                 <h3>Unified Operational Dashboards</h3>
-                <p>Developing real-time, browser-based UI screens for shift managers to monitor task completion rates, inventory levels, and overall facility status at a glance.</p>
+                <p>Developing real-time, browser-based UI screens for managers to monitor task completion rates, inventory levels, and overall system status at a glance.</p>
             </div>
         </section>
 
         <section class="methodology">
             <h2>Our Methodology</h2>
-            <p>Praxis Applied Logic applies a first-principles approach to systems architecture. We bridge the gap between physical infrastructure and digital workflows, engineering highly secure, localized data and control solutions tailored to your exact operational environment—from commercial facilities to the modern home.</p>
+            <p>Praxis Applied Logic applies a first-principles approach to systems architecture. We bridge the gap between physical infrastructure and digital workflows, engineering highly secure, localized data and control solutions tailored to your exact operational environment—from commercial sectors to the modern workspace.</p>
             <a href="mailto:raymond@praxisappliedlogic.com" class="btn">Inquire for Access</a>
         </section>
         <footer>
             <div class="legal-disclaimer">
-                <p>Praxis Applied Logic operates primarily as a technology consulting, software engineering, and systems design firm. Any localized hardware deployments or minor physical installations provided in conjunction with our IT services are performed strictly under the minor work exemption defined in A.R.S. § 32-1121(A)(14). <em>*Not a Licensed Contractor.</em></p>
+                <p>Praxis Applied Logic operates primarily as a technology consulting, software engineering, and systems design firm. Any localized hardware deployments or minor physical installations provided in conjunction with our services are performed strictly under the minor work exemption defined in A.R.S. § 32-1121(A)(14). <em>*Not a Licensed Contractor.</em></p>
             </div>
             <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Praxis Applied Logic | Arizona, USA</p>
         </footer>
